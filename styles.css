@@ -1,8 +1,11 @@
+* {
+  width: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f7fa;
     padding: 40px;
-    box-shadow: 10px 10px 20px 0px hsla(0, 0%, 0%, 0.1);
 }
 .container {
     width: 1200px;
@@ -32,18 +35,14 @@ body {
 .contact-list {
     padding-left: 0;
 }
-.contacts-item::before {
-    content: '\2022';
-    color: #dacd9dc9;
-    margin-right: 8px;
-    font-size: 18px;
-}
+
 .contacts-link {
     text-decoration: none;
     color: #fff;
-    opacity: 0.6;
 }
+
 .contacts-link:hover {
+    color: #dacd9dc9;
     opacity: 1;
 }
 
@@ -89,7 +88,7 @@ body {
 }
 
 .bio-title {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 2;
     margin-bottom: 20px;
 }
@@ -105,34 +104,35 @@ body {
 
 .bio-occupation,
 .bio-about {
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1.714;
+    text-align: justify;
 }
 .bio-about {
+  font-size: 14px;
     color: #595959;
+
 }
 
-.jobs-title {
-    font-size: 22px;
+.jobs-title,
+.education-title,
+.additional-title {
+    font-size: 18px;
     line-height: 1.091;
     color: #2a2a2a;
-    margin-bottom: 26px;
+;
+    margin-bottom: 15px;
 }
 .jobs-occupation {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #2a2a2a;
     margin-bottom: 16px;
 }
-.jobs-period {
-    font-size: 12px;
-    line-height: 2;
-    color: #828282;
-    margin-bottom: 18px;
-}
+
 .responsibilities {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    color: #595959;
 }
 
 .experience-item {
@@ -142,34 +142,28 @@ body {
     margin: 10px 10px;
 }
 
-.education-title,
-.additional-title {
-    color: #2a2a2a;
-    font-size: 22px;
-    line-height: 1.091;
-    margin-bottom: 26px;
+.additional {
+  margin-top: 50px;
 }
 .education-degree,
 .additional-degree {
     color: #2a2a2a;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 16px;
 }
-
+.jobs-period,
 .education-period,
 .additional-period {
     color: #828282;
     font-size: 12px;
     line-height: 2;
-    margin-bottom: 18px;
-}
-.languages {
-    color: #2a2a2a;
 }
 
-.style {
-    color: brown;
+.languages {
+      font-size: 14px;
+    line-height: 1.091;
+    color: #595959;
 }
 
 .project-link {
@@ -180,24 +174,11 @@ body {
     color: #dacd9dc9;
 }
 
-.footer {
-    background-color: #f3f3f5;
-    width: 1200px;
-    margin: 0 auto;
+.svg-icon {
+  vertical-align: sub;
+  filter: invert(93%) sepia(2%) saturate(6404%) hue-rotate(337deg) brightness(87%) contrast(97%);
+  width: 25px;
+  padding: 10px 15px 0px 0;
 }
-.github-link {
-    text-decoration: none;
-    color: #444343;
-}
-.github-link:hover {
-    color: #dacd9dc9;
-}
-.github-icon {
-    width: 25px;
-    padding: 10px 15px 0 0;
-}
-.logo-rss {
-    width: 100px;
-    height: auto;
-    padding-top: 20px;
-}
+
+
